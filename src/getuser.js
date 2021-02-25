@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Container } from "react-bootstrap"
 import Todos from "./Todos"
 
 function GetUsers() {
@@ -41,12 +40,12 @@ function GetUsers() {
 
     return (
         <div className="getusers">
-            <Container style={{ display: loading ? 'block' : 'none' }}>
+            <div style={{ display: loading ? 'block' : 'none' }}>
                 loading
-            </Container>
-            <Container style={{ display: loading ? 'none' : 'block' }}>
+            </div>
+            <div style={{ display: loading ? 'none' : 'block' }}>
                 {setUl(users)}
-            </Container>
+            </div>
             {whatToShow}
         </div>
 
